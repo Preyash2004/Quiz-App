@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles specific to the form container */
+        .hubspot-form-container {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 600px; /* Adjust as needed */
+            padding: 20px;
+            background-color: #FFFFFF; /* Optional: background color for the form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+        .hubspot-form-container .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333333; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Quick Quiz</h1>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "47977148",
+            formId: "ae66b234-e72b-45b7-bb4a-2e381854c706"
+          });
+        </script>
+        <br>
+        <br>
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-button">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
